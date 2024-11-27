@@ -71,7 +71,6 @@ def analyze():
                 )
 
                 # Log the raw response for debugging
-                logging.info(f"Raw Response: {response}")
 
                 response_text = response.choices[0].message.content
                 logprobs_content = response.choices[0].logprobs
